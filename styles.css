@@ -35,39 +35,15 @@ body {
 
 .card {
   background-color: var(--card);
-  width: 327px;
-  height: 780px;
+  width: 1110px;
+  height: 446px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--white);
+  gap: 30px;
 }
 
-.card img {
-  width: 327px;
-  height: 240px;
-}
-
-.card h1,
-.card h2 {
-  font-family: var(--ff-inter);
-  font-weight: var(--fw-bold);
-  color: var(--white);
-  text-align: center;
-}
-
-.card h1 {
-  padding: 40px 31.5px 16px;
-  font-size: 28px;
-  line-height: 32px;
-}
-
-span {
-  color: var(--violet);
-}
-
-.card p {
-  font-family: var(--ff-inter);
-  font-weight: var(--fw-regular);
-  color: var(--paragraph);
-  padding: 0 31.5px 40px;
-  text-align: center;
-  font-size: var(--fs);
-  line-height: 25px;
+img {
+  width: 540px;
+  height: 446px;
 }
