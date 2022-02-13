@@ -26,24 +26,117 @@
 }
 
 body {
-  background-color: var(--blue);
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--blue);
+  color: var(--white);
 }
 
-.card {
+section {
+  padding: 0 31.5px 0;
+}
+
+span {
+  color: var(--violet);
+}
+
+.container {
+  width: 327px;
+  height: 780px;
+  border-radius: 8px 8px 0 0;
   background-color: var(--card);
-  width: 1110px;
-  height: 446px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--white);
-  gap: 30px;
 }
 
-img {
-  width: 540px;
-  height: 446px;
+.image {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 40px;
+  background: url("./images/image-header-mobile.jpg") var(--violet);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 32px;
+  padding-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-family: var(--ff-lexend);
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--headings);
+}
+
+p {
+  font-family: var(--ff-inter);
+  font-size: var(--fs);
+  line-height: 25px;
+  text-align: center;
+  color: var(--paragraph);
+  padding-bottom: 40px;
+}
+
+.templates {
+  padding: 24px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1110px;
+    height: 446px;
+    display: flex;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  section,
+  .templates {
+    padding: 0;
+  }
+
+  .image {
+    height: 446px;
+    border-radius: 0 8px 8px 0;
+    background: url("./images/image-header-desktop.jpg") var(--violet);
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 71px 95px 25px 72px;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 124.5px 72px 71.5px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 147px 59px 71.5px;
+  }
 }
